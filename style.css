@@ -1,0 +1,63 @@
+body {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: rgb(55, 175, 255);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: inherit;
+    margin-bottom: 8px;
+}
+
+dialog[open] {
+    border-radius: 8px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    > li {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        > input:not([type="checkbox"]) {
+            border-radius: 8px;
+            padding: 2px 8px;
+            font-size: inherit;
+            font-family: inherit;
+        }
+    }
+}
+
+th, td {
+    padding: 5px 10px;
+    min-width: 150px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid black;
+    > *:nth-child(3) {
+        text-align: end;
+    }
+    > *:not(:nth-child(3)) {
+        text-align: start;
+    }
+}
+
+
+
